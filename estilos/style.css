@@ -1,24 +1,19 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Mono", monospace !important
 }
 
 .bar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    color: white;
-    background-color: black;
+    background-image: linear-gradient(45deg, rgba(238,24,24,1) 35%, rgba(255,29,0,1) 100%);
     padding: 10px;
 }
 
-#logotext:hover {
-    display: none;
-}
-
-#logotext:hover:before {
-    content: "Gustavo Vinícius";
+.bar h1 {
+    font-weight: 700;
 }
 
 .list {
@@ -30,7 +25,32 @@
 }
 
 .list a {
-    color: white;
     text-decoration: none;
     padding: 10px;
+    margin: 5px;
+    color: black;
+}
+
+.list a:hover {
+    background-color: rgb(255, 253, 253);
+    border-radius: 10px;
+}
+
+#landing {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(45deg, rgba(238,24,24,1) 35%, rgba(255,29,0,1) 100%);
+}
+
+#landing div {
+    font-size: 12px;
+    padding-top: 200px;
+}
+
+.landingimage {
+    border-radius: 360px;
 }

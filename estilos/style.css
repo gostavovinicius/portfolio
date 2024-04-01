@@ -74,7 +74,7 @@ body {
 }
 
 .landingimage {
-    width: 500px;
+    width: 75wh;
     height: auto;
     border-radius: 100px;
     background: radial-gradient(circle, rgba(246,245,249,1) 0%, rgba(204,208,209,1) 100%);

@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+#logotext:hover {
+    display: none;
+}
+
+#logotext:hover:before {
+    content: "Gustavo Vinícius";
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
+}
+
+.list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}

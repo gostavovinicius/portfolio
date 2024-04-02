@@ -110,6 +110,7 @@ body {
 }
 
 #sobremim p {
+    text-align: justify;
     font-size: 2em;
     padding-top: 20px;
 }
@@ -138,7 +139,7 @@ body {
     width: 95%;
     height: auto;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -146,6 +147,7 @@ body {
 }
 
 .projeto1 p {
+    text-align: justify;
     color: white;
     font-size: 2em;
 }
@@ -199,7 +201,6 @@ body {
 }
 
 .botao {
-    width: 15vw;
     padding: 20px;
     margin: 5px;
     background-color: white;
@@ -210,5 +211,5 @@ body {
 }
 
 span {
-    font-size: 1.5vh;
+    font-size: 80%;
 }

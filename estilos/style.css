@@ -52,8 +52,7 @@ body {
 }
 
 .list a:hover {
-    background-image: linear-gradient(45deg, #ef402dbd, #ef3f2fa9, #ef402d9d);
-    border-radius: 10px;
+    color: #ef402dbd;
     transition: 200ms;
 }
 
@@ -132,7 +131,6 @@ body {
 .projeto1 {
     color: white;
     max-width: 1020px;
-    width: 95%;
     height: auto;
     margin: auto;
     padding: 10px;
@@ -145,22 +143,41 @@ body {
 .projeto1 p {
     text-align: justify;
     color: white;
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
 .projeto1 h1 {
     color: white;
-    font-size: 3em;
+    font-size: 2vw;
 }
 
 .projeto1 li {
     color: white;
-    font-size: 2em;
+    font-size: 1.5vw;
 }
 
-.projetoimg {
-    width: 30vw;
-    height: auto;
+.backgroundprojeto2 {
+    background-color: #c5ebd6;
+}
+
+.texto {
+    padding: 10px;
+    margin: 5px;
+    width: 510px;
+    background-color: #39a067;
+    border-radius: 10px;
+}
+
+.imagem {
+    height: 510px;
+    width: 510px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img01 {
+    background-image: url('../images/desafioandroid.png');
+    background-position: top center;
 }
 
 .footer {

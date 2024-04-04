@@ -90,7 +90,7 @@ body {
     width: 95%;
     height: auto;
     max-width: 1020px;
-    padding: 20px 0px;
+    padding: 80px 0px;
 }
 
 #sobremim h1 {
@@ -111,6 +111,7 @@ body {
 }
 
 #projetos {
+    padding: 80px 0px;
     background-color: white;
     width: 100%;
     z-index: 0;
@@ -133,14 +134,14 @@ body {
     max-width: 1020px;
     height: auto;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
 }
 
-.projeto1, p {
+.projeto1 p {
     text-align: justify;
     color: white;
     font-size: 1.5vw;
@@ -152,8 +153,11 @@ body {
 }
 
 .projeto1 li {
+    text-align: justify;
     color: white;
-    font-size: 1.5vw;
+    font-size: 1vw;
+    padding: 15px;
+    line-height: 0;
 }
 
 .projeto2 {
@@ -168,32 +172,40 @@ body {
     align-items: center;
 }
 
-.projeto2 p {
-    text-align: justify;
-    color: white;
-    font-size: 1.5vw;
+.texto {
+    border-radius: 20px;
+    background-color: white;
 }
 
-.projeto2 h1 {
-    color: white;
-    font-size: 2vw;
+.projeto2 p {
+    text-align: justify;
+    color: #1a5c37;
+    font-size: 1.5vw;
+    padding: 10px;
 }
 
 .projeto2 li {
-    color: white;
-    font-size: 1.5vw;
+    text-align: justify;
+    color: #1a5c37;
+    font-size: 1vw;
+    padding: 15px;
+    line-height: 0;
+}
+
+.projeto2 h1 {
+    color: #1a5c37;
+    font-size: 2vw;
+    background-image: linear-gradient(to right, #83e1ad, transparent);
+    padding: 10px;
 }
 
 .backgroundprojeto2 {
     background-color: #c5ebd6;
 }
 
-.texto {
-    padding: 10px;
-    margin: 5px;
-    width: 510px;
-    background-color: #39a067;
-    border-radius: 10px;
+.imagem {
+    width: 30vw;
+    margin-top: -40px;
 }
 
 

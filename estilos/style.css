@@ -7,6 +7,11 @@
     color: rgba(14, 13, 13, 0.877);;
 }
 
+html {
+    scroll-padding-top: 80px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 16px;
     background-image: linear-gradient(45deg, #ef412d, #ef402f, #ef412d);
@@ -64,6 +69,7 @@ p {
     z-index: 0;
     margin-top: 80px;
     width: 95%;
+    height: 100vh;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
@@ -80,12 +86,13 @@ p {
 }
 
 .landingimage {
-    background-color: white;
+    filter: drop-shadow(5px 5px 5px #111);
     padding: 10px;
     margin: -20px;
     width: 30vw;
     height: auto;
-    border-radius:  0px 30%;
+    border-radius: 0px 30%;
+    background-color: white;
 }
 
 .test {
@@ -94,11 +101,11 @@ p {
 }
 
 #sobremim {
+    padding: 20px;
     margin: auto;
     width: 95%;
-    height: auto;
+    height: 100vh;
     max-width: 1020px;
-    padding: 80px 0px;
 }
 
 #sobremim h1 {
@@ -113,12 +120,11 @@ p {
 }
 
 #sobremim p {
-    font-size: 2em;
+    font-size: 1.3em;
     padding-top: 20px;
 }
 
 #projetos {
-    padding: 80px 0px;
     background-color: white;
     width: 100%;
     z-index: 0;
@@ -215,7 +221,6 @@ p {
 .footer {
     bottom: 0;
     width: 100%;
-    height: auto;
     text-align: center;
     background-color: white;
     margin: auto;

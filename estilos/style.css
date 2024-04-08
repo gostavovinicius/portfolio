@@ -37,6 +37,7 @@ a {
     align-items: center;
     backdrop-filter: blur(20px);
     background-color:transparent;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
 }
 
 .redessociais {
@@ -110,7 +111,7 @@ a {
 #sobremim {
     padding: 20px;
     margin: auto;
-    height: 100vh;
+    height: 700px;
     max-width: 1020px;
 }
 
@@ -134,6 +135,7 @@ a {
 #projetos {
     background-color: white;
     z-index: 0;
+    text-align: left;
 }
 
 .title h1{
@@ -149,6 +151,7 @@ a {
 }
 
 .projeto1 {
+    text-align: left;
     color: white;
     max-width: 1020px;
     height: auto;
@@ -156,7 +159,6 @@ a {
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    align-items: center;
 }
 
 .projeto1 p {
@@ -226,7 +228,7 @@ a {
     background-color: white;
 }
 
-.footer p, h1 {
+.footer p {
     font-size: 1em;
     text-align: center;
 }
@@ -239,7 +241,6 @@ a {
 
 .contato li {
     list-style: none;
-    text-align: left;
 }
 
 .contato a {
@@ -253,6 +254,11 @@ a {
 
 .contato a::before {
     content: "+";
+}
+
+.entrecontato {
+    display: flex;
+    flex-direction: column;
 }
 
 .botao {

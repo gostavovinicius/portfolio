@@ -21,6 +21,10 @@ p {
     text-align: justify;
 }
 
+a {
+    cursor: pointer;
+}
+
 .bar {
     position: fixed;
     z-index: 1;
@@ -31,17 +35,19 @@ p {
     justify-content: space-around;
     display: flex;
     align-items: center;
-    background-color:white;
+    backdrop-filter: blur(20px);
+    background-color:transparent;
 }
 
 .redessociais {
     opacity: 85%;
+    border-radius: 10px;
 }
 
 .redessociais:hover {
     opacity: 100%;
-    background-image: linear-gradient(45deg, #ef402dbd, #ef3f2fa9, #ef402d9d);
-    border-radius: 20%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .list {
@@ -54,6 +60,7 @@ p {
 }
 
 .list a {
+    text-shadow: 1px 3px 5px black;
     text-decoration: none;
     padding: 5px;
     margin: 5px;
@@ -61,18 +68,18 @@ p {
 }
 
 .list a:hover {
-    color: #ef402dbd;
+    color: white;
     transition: 200ms;
 }
 
 #landing {
     z-index: 0;
-    margin-top: 80px;
-    width: 95%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    margin: 80px auto 10px auto;
+    padding: 20px;
+    max-width: 1020px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
 }
 
@@ -88,9 +95,9 @@ p {
 .landingimage {
     filter: drop-shadow(5px 5px 5px #111);
     padding: 10px;
-    margin: -20px;
-    width: 30vw;
-    height: auto;
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
     border-radius: 0px 30%;
     background-color: white;
 }
@@ -103,7 +110,6 @@ p {
 #sobremim {
     padding: 20px;
     margin: auto;
-    width: 95%;
     height: 100vh;
     max-width: 1020px;
 }
@@ -111,6 +117,7 @@ p {
 #sobremim h1 {
     font-size: 3em;
     color: #ef402f;
+    text-align: left;
 }
 
 #sobremim h2 {
@@ -126,7 +133,6 @@ p {
 
 #projetos {
     background-color: white;
-    width: 100%;
     z-index: 0;
 }
 
@@ -148,9 +154,8 @@ p {
     height: auto;
     margin: auto;
     padding: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     align-items: center;
 }
 
@@ -176,15 +181,14 @@ p {
     max-width: 1020px;
     margin: auto;
     padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
 }
 
 .texto {
     border-radius: 20px;
     background-color: white;
-    min-height: 10em;
 }
 
 .projeto2 p {
@@ -213,21 +217,18 @@ p {
 }
 
 .imagem {
-    width: 30vw;
+    width: 100%;
     height: auto;
-    margin-top: -40px;
 }
 
 .footer {
     bottom: 0;
-    width: 100%;
-    text-align: center;
     background-color: white;
-    margin: auto;
 }
 
 .footer p, h1 {
-    font-size: 1.4em;
+    font-size: 1em;
+    text-align: center;
 }
 
 .contato { 
@@ -246,20 +247,27 @@ p {
     text-decoration: none;
 }
 
+.contato a:hover {
+    color: #ef402f;
+}
+
 .contato a::before {
     content: "+";
 }
 
 .botao {
+    cursor: pointer;
+    margin: 20px;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
     padding: 20px;
     margin: 5px;
     background-color: white;
 }
 
-.botao:hover {
-    background-color: rgb(182, 178, 178);
-}
-
 span {
+    font-weight: 600;
+    color: black;
     font-size: 80%;
 }
